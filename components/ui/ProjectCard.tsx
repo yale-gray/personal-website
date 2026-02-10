@@ -14,8 +14,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       transition={{ delay: index * 0.1 }}
-      whileHover={{ y: -8, transition: {duration: 0.15, delay: 0.05} }}
-      className="group bg-apple-gray-dark rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300"
+      whileHover={{ y: -8, transition: { duration: 0.2, ease: "easeOut" } }}
+      className="group bg-apple-gray-dark rounded-2xl overflow-hidden border border-white/10 hover:border-white/20"
       layout
     >
       {/* Image */}
