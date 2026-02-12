@@ -12,24 +12,26 @@ export default function About() {
     <SectionWrapper id="about">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left: Image */}
-        <motion.div
-          variants={slideInLeft}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="relative aspect-square max-w-md mx-auto lg:mx-0"
-        >
-          <div className="absolute inset-0 bg-apple-blue/20 rounded-2xl blur-3xl" />
-          <Image
-            src="https://placehold.co/600x600/1d1d1f/f5f5f7?text=Profile+Photo"
-            alt="Profile"
-            width={600}
-            height={600}
-            className="object-cover rounded-2xl relative z-10"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            priority
-          />
-        </motion.div>
+        <div className="flex justify-center lg:justify-start">
+          <motion.div
+            variants={slideInLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="relative w-96 h-96"
+          >
+            <div className="absolute inset-0 bg-apple-blue/20 rounded-full blur-3xl" />
+            <Image
+              src="/images/profile-removebg-preview.png"
+              alt="Yale Gray"
+              width={800}
+              height={800}
+              className="object-cover rounded-full relative z-10 border-4 border-white w-full h-full"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+            />
+          </motion.div>
+        </div>
 
         {/* Right: Content */}
         <motion.div

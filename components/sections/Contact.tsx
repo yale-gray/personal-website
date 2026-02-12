@@ -55,8 +55,8 @@ export default function Contact() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-apple-gray-dark border border-white/10 flex items-center justify-center text-apple-gray hover:text-apple-white hover:border-apple-blue hover:bg-apple-blue/10 transition-all duration-300"
-                whileHover={{ scale: 1.1, y: -4 }}
+                className="w-12 h-12 rounded-full bg-apple-gray-dark border border-white/10 flex items-center justify-center text-apple-gray hover:text-apple-white hover:border-apple-blue hover:bg-apple-blue/10"
+                whileHover={{ scale: 1.1, transition: { duration: 0.15, ease: "easeOut" } }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
